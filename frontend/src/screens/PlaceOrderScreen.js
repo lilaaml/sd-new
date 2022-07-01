@@ -91,7 +91,7 @@ function PlaceOrderScreen({ history }) {
                                                     </Col>
 
                                                     <Col md={4}>
-                                                        {item.qty} X Rp.{item.price} = Rp.{(item.qty * item.price)}
+                                                        {item.qty} X Rp. {item.price} = Rp. {(item.qty * item.price)}
                                                     </Col>
                                                 </Row>
                                             </ListGroup.Item>

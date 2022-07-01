@@ -78,9 +78,9 @@ function OrderScreen({ match, history }) {
     ) : error ? (
         <Message variant='danger'>{error}</Message>
     ) : (
-                <div>
+                <div style={{ minHeight: '90vh'}}>
                     <h1>Order: {order.Id}</h1>
-                    <Row>
+                    <Row className='m-4'>
                         <Col md={8}>
                             <ListGroup variant='flush'>
                                 <ListGroup.Item>
@@ -195,7 +195,14 @@ function OrderScreen({ match, history }) {
                                                         amount={order.totalPrice}
                                                         onSuccess={successPaymentHandler}
                                                     />
-                                                )}
+                                                )
+                                            }
+                                            <Link to='/profile' className='btn btn-light' style={{ backgroundColor: '#ffffff' }}>
+                                                <Image src="../static/images/gopay-logo.jpg" style={{ width: '40%' }} />
+                                            </Link>
+                                            <Link to='/profile' className='btn btn-light my-3' style={{ backgroundColor: '#4E3394' }}>
+                                                <Image src="../static/images/ovo-logo.png" style={{ width: '40%' }} />
+                                            </Link>
                                         </ListGroup.Item>
                                     )}
                                 </ListGroup>
