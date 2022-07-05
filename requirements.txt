@@ -1,5 +1,5 @@
 appdirs==1.4.4
-asgiref==3.2.10
+asgiref==3.5.2
 astroid==2.4.2
 autopep8==1.5.4
 backports.zoneinfo==0.2.1
@@ -15,7 +15,7 @@ cs50==5.0.4
 Deprecated==1.2.13
 distlib==0.3.1
 dj-database-url==0.5.0
-Django==3.1.4
+Django==4.0.6
 django-ckeditor==5.9.0
 django-cors-headers==3.5.0
 django-crispy-forms==1.9.2
