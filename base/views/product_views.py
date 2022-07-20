@@ -65,7 +65,8 @@ def createProduct(request):
         brand='Sample Brand',
         countInStock=0,
         category='Sample Category',
-        description=''
+        description='',
+        custom=0
     )
 
     serializer = ProductSerializer(product, many=False)
@@ -81,7 +82,8 @@ def createProductV2(request):
         brand = data['brand'],
         countInStock = data['countInStock'],
         category = data['category'],
-        description = data['description']
+        description = data['description'],
+        custom=1
     )
 
     serializer = ProductSerializer(product, many=False)
